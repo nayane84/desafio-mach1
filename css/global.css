@@ -1,0 +1,70 @@
+.button {
+    text-transform: lowercase;
+    font-weight:500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-bottom: 10px;
+
+}
+
+/* #logo {
+    margin-top: -20px !important;
+   
+} */
+
+.sect-lgt{
+    color: rgb(43, 42, 42);
+    background-image: linear-gradient(to right,  rgb(202, 202, 202),rgb(255, 255, 255));
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.sect-drk{
+    color: rgb(236, 236, 236);
+    background-image: linear-gradient(to right,  rgb(55, 64, 80),rgb(21, 43, 61));
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+H1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 10px;
+}
+
+
+h3{
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.mar-tp {
+
+    margin-top: 20px;
+}
+
+h1.pdb {
+    padding-bottom: 40px;
+}
+
+
+
+#rodape {
+    background-image: linear-gradient(to right, rgb(16, 15, 17), rgb(11, 11, 17));
+    color: antiquewhite;
+    height: 200px;
+}
+
+
+
