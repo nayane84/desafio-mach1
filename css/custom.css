@@ -61,6 +61,11 @@ margin-top: 30px;
 }
 
 
+#lista-de-alunos{
+    min-height: 500px;
+    max-height: auto;
+}
+
 
 
 
