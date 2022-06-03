@@ -3,24 +3,19 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
     <!-- Roboto Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/main.css">
-
     <title>Match_School</title>
+
+    <script type="text/javascript" src="js/table-script.js"></script>
   </head>
 
-  <body>
-
-
-
-      
+  <body>    
     <!-- Header  -->
     <div id="header" class="fixed-top ">
         <div class="container ">
@@ -57,11 +52,8 @@
             </nav>
         </div>
     </div>
-      <!-- Header End -->
-
 
     <!-- seção 1  -->
-
     <div id="introducao" class="sect-lgt">
         <div class="container">
             <div class="row">
@@ -78,23 +70,17 @@
     </div>
 	
     <!-- Dica 1 -->
-
-
-    <div id="primeira-dica"class="sect-drk">
+    <div id="primeira-dica" class="sect-drk">
         <div class="container mb-4">
 
             <h1 class="text-center pdb"> Dica 1 </h1>
 
             <div class="row">
-                <!-- coluna esquerda -->
-
-               
+                <!-- coluna esquerda -->               
                     <div class="col-md-6 text-center">
                         <img src="assets/man-circle.png" class="mb-5 img-fluid"/>
                         <h3> Os Links do menu com descrição e imagem </h3> 
-                    </div>
-                
-
+                    </div>           
                 <!-- coluna  direita-->
                     <div class="col-md-6 text-center">
                         <img src="assets/man-circle.png" class="mb-5 img-fluid"/>
@@ -103,7 +89,6 @@
                 </div>
         </div>
     </div>
-	
 
     <!--  Dica 2 -->
     <div id="segunda-dica" class="sect-lgt">
@@ -122,136 +107,98 @@
     </div>
 	
 <!-- formulário a preencher -->
-
     <div id="formulario"class="sect-drk">
         <div class="container blue-background">
 
             <h1 class="text-center pdb">
                 Cadastro do Aluno 
             </h1>
-
-            <div class="row">
-                <!-- coluna esquerda -->
-
-               
-                    <div class="col-md-6 text-center">
-
-                        <div class="mb-5">
-                            <label for="exampleFormControlInput1" class="mb-4 form-label">Nome:</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome do Aluno">
+            <form id="f-alunos">
+                <div class="row">
+                    <!-- coluna esquerda -->
+                        <div class="col-md-6 text-center">
+                            <div class="mb-5">
+                                <label for="txtNome" class="mb-4 form-label">Nome</label>
+                                <input type="text" class="form-control" id="txtNome" placeholder="Nome do Aluno">
+                            </div>
+                            <div class="mb-5">
+                                <label for="txtCpf" class="mb-4 form-label">CPF</label>
+                                <input type="number" class="form-control" id="txtCpf" placeholder="CPF do Aluno">
+                            </div>
                         </div>
-                        <div class="mb-5">
-                            <label for="exampleFormControlInput1" class="mb-4 form-label">CPF:</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="CPF do Aluno">
+                    <!-- coluna  direita-->
+                         <div class="col-md-6 text-center">
+                            <div class="mb-5">
+                                <label for="txtEmail" class="mb-4 form-label ">Email</label>
+                                <input type="email" class="form-control" id="txtEmail" placeholder="Email do aluno">
+                            </div>
+                            <div class="mb-5">
+
+
+
+
+                                <label for="txtCurso" class="mb-4 form-label">Curso</label>
+
+
+                                <select id="txtCurso" class="form-select form-control" aria-label="Default select example">
+                                    <option selected>Selecione o Curso</option>
+                                    <option value="Administração">Administração</option>
+                                    <option value="Psicologia">Psicologia</option>
+                                    <option value="Direito">Direito</option>
+                                    <option value="Gastronomia">Gastronomia</option>
+                                    <option value="Comércio Exterior">Comércio Exterior</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="Estética e Cosmética">Estética e Cosmétic</option>
+                                    <option value="Radiologia">Radiologia</option>
+                                    <option value="Segurança do Trabalho">Segurança do Trabalho</option>
+                                    <option value="Ciência de Dados">Ciência de Dados</option>
+                                    <option value="Mecatrônica Industrial">Mecatrônica Industrial</option>
+                                    <option value="Negócios Imobiliários">Negócios Imobiliários</option>
+                                </select>
+
+
+                            </div>
                         </div>
+
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button  type="button" value="cadastra aluno" class="btn btn-light w-100 " onclick="cadAluno(txtNome.value, txtCpf.value, txtEmail.value, txtCurso.value)">Cadastrar</button>
                     </div>
-                
-
-                <!-- coluna  direita-->
-
-                     <div class="col-md-6 text-center">
-                      
-                        <div class="mb-5">
-                            <label for="exampleFormControlInput1" class="mb-4 form-label ">Email:</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email do aluno">
-                        </div>
-                        <div class="mb-5">
-                            <label for="exampleFormControlInput1" class="mb-4 form-label">Curso:</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite o Curso">
-                        </div>
-                    </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button  type="button" class="btn btn-light w-100 ">Cadastrar</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
-    <!-- Verificar se não fica melho comlabels https://getbootstrap.com/docs/5.1/forms/layout/ -->
-
-
-
-    <!-- Grade com a lista de alunos -->
-
-
+    <!-- Grade com a lista de alunos -->   
+         
     <div id="lista-de-alunos" class="sect-lgt">
         <div class="container">
-
             <h1 class="text-center pdb">
                 Lista de Alunos
             </h1>
 
-            <div class="row">
-                <div class="col">
-                  Column
-                </div>
-                <div class="col">
-                  Column
-                </div>
-                <div class="col">
-                  Column
-                </div>
-
-                <div class="col">
-                    Column
-                  </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                  Column
-                </div>
-                <div class="col">
-                  Column
-                </div>
-                <div class="col">
-                  Column
-                </div>
-
-                <div class="col">
-                    Column
-                  </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                  Column
-                </div>
-                <div class="col">
-                  Column
-                </div>
-                <div class="col">
-                  Column
-                </div>
-
-                <div class="col">
-                    Column
-                  </div>
-            </div>
+            <table id="tbl-alunos" class="table table-dark">
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Nome</td>
+                        <td>CPF</td>
+                        <td>Email</td>
+                        <td>Curso</td>
+                    </tr>
+                </thead>
+            </table>
         </div>
     </div>
 
-
-
-
-
     <!-- Rodapé -->
-
-    <footer id="rodape" >
-        
+    <footer id="rodape" >    
             <div>
                 <p  class="text-center p-5"> Powered by Match 1 - Pilotando o futuro </p>
-            </div>
-            
-         
+            </div>         
     </footer>
 
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
+    <!-- Option 2: Separate Popper and Bootstrap JS --> 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-   
-
 </body>
 </html>
