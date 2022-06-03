@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Roboto Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,26 +14,22 @@
     <title>Match_School</title>
 
     <script type="text/javascript" src="js/table-script.js"></script>
-  </head>
+</head>
 
-  <body>    
+<body> <a name="top"></a>
     <!-- Header  -->
-    <div id="header" class="fixed-top ">
-        <div class="container ">
-            <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow p-3 mb-5 bg-body rounded">
-                
-                <a class="navbar-brand" href="#">
-                <img id="logo" src="assets/lorem-logo.png" class="img-fluid ">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-
-    
+   
+    <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-light shadow p-3 mb-5 bg-body rounded">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#segunda-dica">Home</a>
+                        <a class="nav-link" href="#top">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#primeira-dica">Dica 1</a>
@@ -46,29 +43,32 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#lista-de-alunos">Lista de alunos</a>
                     </li>
-                    </ul>
-                </div>
-                
-            </nav>
-        </div>
+                </ul>
+               </div>
+            </div>
+          </nav>
     </div>
 
     <!-- seção 1  -->
     <div id="introducao" class="sect-lgt">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 align-self-center"> 
+                <div class="col-md-5 align-self-center">
                     <h1>Este é um teste de programação front-end</h1>
                     <h3>Vamos fazer um cadastro de alunos básicos e uma listágem.</h3>
-                    <button  type="button" class="btn btn-secondary button">Cadastro Aluno</button>
-                 </div>
-                 <div class="col-md-7"> 
-                    <img src="assets/main.jpg" class="img-fluid rounded"/>
+                    <button type="button" class="btn btn-secondary button">
+                        <a href="#formulario">
+                            Cadastro Aluno
+                        </a>
+                    </button>
+                </div>
+                <div class="col-md-7">
+                    <img src="assets/main.jpg" class="img-fluid rounded" />
                 </div>
             </div>
         </div>
     </div>
-	
+
     <!-- Dica 1 -->
     <div id="primeira-dica" class="sect-drk">
         <div class="container mb-4">
@@ -76,17 +76,17 @@
             <h1 class="text-center pdb"> Dica 1 </h1>
 
             <div class="row">
-                <!-- coluna esquerda -->               
-                    <div class="col-md-6 text-center">
-                        <img src="assets/man-circle.png" class="mb-5 img-fluid"/>
-                        <h3> Os Links do menu com descrição e imagem </h3> 
-                    </div>           
-                <!-- coluna  direita-->
-                    <div class="col-md-6 text-center">
-                        <img src="assets/man-circle.png" class="mb-5 img-fluid"/>
-                        <h3> Os Botões do menu com descrição e imagem </h3>
-                    </div>
+                <!-- coluna esquerda -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/man-circle.png" class="mb-5 img-fluid" />
+                    <h3> Os Links do menu com descrição e imagem </h3>
                 </div>
+                <!-- coluna  direita-->
+                <div class="col-md-6 text-center">
+                    <img src="assets/man-circle.png" class="mb-5 img-fluid" />
+                    <h3> Os Botões do menu com descrição e imagem </h3>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -94,57 +94,62 @@
     <div id="segunda-dica" class="sect-lgt">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 align-self-center"> 
-                    <img src="assets/mulher-prog.jpg" class="img-fluid rounded"/>
+                <div class="col-md-6 align-self-center">
+                    <img src="assets/mulher-prog.jpg" class="img-fluid rounded" />
                 </div>
-                <div class="col-md-6 align-self-center"> 
+                <div class="col-md-6 align-self-center">
                     <h1> Dica 2</h1>
-                    <h3>Cada aluno cadastrado deve aparecer na tabela abaixo do formulário, além da inclusão, crie um método para remover o cadastro</h3>
-                    <button  type="button" class="btn btn-secondary button">Cadastro Aluno</button>
-                 </div>
+                    <h3>Cada aluno cadastrado deve aparecer na tabela abaixo do formulário, além da inclusão, crie um
+                        método para remover o cadastro</h3>
+                    <button type="button" class="btn btn-secondary button">
+                        <a href="#formulario">
+                            Cadastro Aluno
+                        </a>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-	
-<!-- formulário a preencher -->
-    <div id="formulario"class="sect-drk">
+
+    <!-- formulário a preencher -->
+    <div id="formulario" class="sect-drk">
         <div class="container blue-background">
 
             <h1 class="text-center pdb">
-                Cadastro do Aluno 
+                Cadastro do Aluno
             </h1>
             <form id="f-alunos">
                 <div class="row">
                     <!-- coluna esquerda -->
-                        <div class="col-md-6 text-center">
-                            <div class="mb-5">
-                                <label for="txtNome" class="mb-4 form-label">Nome</label>
-                                <input type="text" class="form-control" id="txtNome" placeholder="Nome do Aluno">
-                            </div>
-                            <div class="mb-5">
-                                <label for="txtCpf" class="mb-4 form-label">CPF</label>
-                                <input type="number" class="form-control" id="txtCpf" placeholder="CPF do Aluno">
-                            </div>
+                    <div class="col-md-6 text-center">
+                        <div class="mb-5">
+                            <label for="txtNome" class="mb-4 form-label">Nome</label>
+                            <input type="text" class="form-control" id="txtNome" placeholder="Nome do Aluno">
                         </div>
+                        <div class="mb-5">
+                            <label for="txtCpf" class="mb-4 form-label">CPF</label>
+                            <input type="number" class="form-control" id="txtCpf" placeholder="CPF do Aluno">
+                        </div>
+                    </div>
                     <!-- coluna  direita-->
-                         <div class="col-md-6 text-center">
-                            <div class="mb-5">
-                                <label for="txtEmail" class="mb-4 form-label ">Email</label>
-                                <input type="email" class="form-control" id="txtEmail" placeholder="Email do aluno">
-                            </div>
-                            <div class="mb-5">
-
-
-
-
-                                <label for="txtCurso" class="mb-4 form-label">Curso</label>
-
-
-                                <select id="txtCurso" class="form-select form-control" aria-label="Default select example">
+                    <div class="col-md-6 text-center">
+                        <div class="mb-5">
+                            <label for="txtEmail" class="mb-4 form-label ">Email</label>
+                            <input type="email" class="form-control" id="txtEmail" placeholder="Email do aluno">
+                        </div>
+                        <div class="mb-5">
+                            <label for="txtCurso" class="mb-4 form-label">Curso</label>
+                            <select id="txtCurso" class="form-select form-control" aria-label="Default select example">
+                                <optgroup label="Bacharelado">
                                     <option selected>Selecione o Curso</option>
                                     <option value="Administração">Administração</option>
                                     <option value="Psicologia">Psicologia</option>
                                     <option value="Direito">Direito</option>
+                                    <option value="Direito">Educação Física</option>
+                                    <option value="Direito">Engenharia Civil</option>
+                                    <option value="Direito">Ciência da Computação</option>
+                                </optgroup>
+                                <optgroup label="Tecnólogo">
                                     <option value="Gastronomia">Gastronomia</option>
                                     <option value="Comércio Exterior">Comércio Exterior</option>
                                     <option value="Marketing">Marketing</option>
@@ -154,22 +159,22 @@
                                     <option value="Ciência de Dados">Ciência de Dados</option>
                                     <option value="Mecatrônica Industrial">Mecatrônica Industrial</option>
                                     <option value="Negócios Imobiliários">Negócios Imobiliários</option>
-                                </select>
-
-
-                            </div>
+                                </optgroup>
+                            </select>
                         </div>
+                    </div>
 
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button  type="button" value="cadastra aluno" class="btn btn-light w-100 " onclick="cadAluno(txtNome.value, txtCpf.value, txtEmail.value, txtCurso.value)">Cadastrar</button>
+                        <button type="button" value="cadastra aluno" class="btn btn-light w-100 "
+                            onclick="cadAluno(txtNome.value, txtCpf.value, txtEmail.value, txtCurso.value)">Cadastrar</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- Grade com a lista de alunos -->   
-         
+    <!-- Grade com a lista de alunos -->
+
     <div id="lista-de-alunos" class="sect-lgt">
         <div class="container">
             <h1 class="text-center pdb">
@@ -191,14 +196,17 @@
     </div>
 
     <!-- Rodapé -->
-    <footer id="rodape" >    
-            <div>
-                <p  class="text-center p-5"> Powered by Match 1 - Pilotando o futuro </p>
-            </div>         
+    <footer id="rodape">
+        <div>
+            <p class="text-center p-5"> Powered by Match 1 - Pilotando o futuro </p>
+        </div>
     </footer>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS --> 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

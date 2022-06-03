@@ -10,12 +10,23 @@ body, html{
     transition: background wase-out 0.2s;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
+
 }
 
 #header .navbar-collapse {
     width: auto;
 }
 
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary);
+    text-decoration: none;
+}
 
 #header .nav-link {
     text-transform: uppercase;
