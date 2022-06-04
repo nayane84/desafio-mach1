@@ -66,7 +66,8 @@ h1.pdb {
 #rodape {
     background-image: linear-gradient(to right, rgb(16, 15, 17), rgb(11, 11, 17));
     color: antiquewhite;
-    height: 200px;
+    min-height: 250px;
+    max-height: auto;
 }
 
 
